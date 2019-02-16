@@ -1,0 +1,67 @@
+#info > div:nth-child(1) > div:nth-child(1) > div,
+#info > div:nth-child(2) > div:nth-child(1) > div,
+#info > div:nth-child(1) > div:nth-child(2) > div,
+#info > div:nth-child(2) > div:nth-child(2) > div {
+  background-color: rgba(255,255,255,0.2);
+  border: 1px solid transparent;
+  transition: 0.4s ease;
+}
+/* ======================= */
+/* Animations */
+/* ======================= */
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7,
+#img8 {
+  position: relative;
+}
+.image {
+  opacity: 1;
+  transition: .8s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .8s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+#img1:hover .image,
+#img2:hover .image,
+#img3:hover .image,
+#img4:hover .image,
+#img5:hover .image,
+#img6:hover .image,
+#img7:hover .image,
+#img8:hover .image {
+  opacity: 0.5;
+}
+#img1:hover .middle,
+#img2:hover .middle,
+#img3:hover .middle,
+#img4:hover .middle,
+#img5:hover .middle,
+#img6:hover .middle,
+#img7:hover .middle,
+#img8:hover .middle {
+  opacity: 1;
+}
+/* OFFSET ANCHOR LINKS */
+section:before {
+  height: 18px;
+  content: "";
+  display:block;
+}
+@media (max-width: 575px) {
+  #nav {
+    background-color: rgba(255,255,255,1) !important;
+  }
+}
